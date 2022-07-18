@@ -37,6 +37,7 @@
    - 基于django web 框架，基于restful 风格，提供后端接口，以支持关于财务相关的线上化流程。
    - python bin 脚本通过http/mysql/hive 获取ods层面的数据，获取每日全量数据快照，生成相应的计算链路，注册相应的psm,在dorado 大数据平台进行相应的每日调度，推送日月账单
    - 基于hive拉去每日全量实例表，构造数据模型，基于ods->dwd->dwa模型的层级关系,生成日月账单，将hive表数据 迁移至 mysql，推送日月账单
+   -  对python数据链路迁移至hive,完成数据链路优化，通过大数据平台实现对数据集成以及计算调度的闭环，完成对链路的管理和监控，便于后续的数仓统一建设和管理
 
 ## <img src="assets/project-diagram-solid.svg" width="30px"> 项目经历
 
